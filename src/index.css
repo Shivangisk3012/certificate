@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* add class in tailwind */
+@layer components {
+  .list_container {
+    @apply [&>section>span]:w-[9.09%] [&>section>img]:w-[9.09%] [&>section>span]:border-b  [&>section>span]:flex
+    [&>section>span]:items-center [&>section>span]:pl-4
+
+    [&>section>span:nth-child(1)]:w-[5%] [&>section>span:nth-child(1)]:pl-2
+    [&>section>span:nth-child(2)]:w-[13%]
+
+    [&>section>span:nth-child(3)]:w-[12%]
+    [&>section>span:nth-child(4)]:w-[12%]
+    [&>section>span:nth-child(6)]:w-[11%]
+    
+    [&>section>span:nth-child(7)]:w-[7.5%]
+    [&>section>span:nth-child(8)]:w-[7.5%]
+    [&>section>span:nth-child(11)]:w-[5%]
+  
+
+    
+  }
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  height: 100vh;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100%;
+}
+
+#root{
+  min-height: 100%;
+}
